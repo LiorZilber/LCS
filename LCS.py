@@ -47,7 +47,7 @@ def find_longest(text1, text2, basis=2 ** 8, r=2 ** 17 - 1):
 
     longest = None
 
-    while match is not None:  #
+    while match is not None:  # increasing length of common subsequences
         l += 1
         extend_fingerprints(text1, fingers1, l, basis, r)
         extend_fingerprints(text2, fingers2, l, basis, r)
